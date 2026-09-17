@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wilson-open-middleware"
+version = "0.1.0"
+description = "Auditable model-agnostic middleware with immutable P2 tracking, explicit QRTM intake, mandatory zero ethics checkpoints, optional open-model adapters, and read-only IBM QPU evidence."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "LicenseRef-Wilson-Open-Reference-1.0"
+license-files = [
+  "LICENSE",
+  "WILSON_OPEN_REFERENCE_LICENSE_v1.0.txt",
+  "NOTICE",
+]
+authors = [{name = "Destiny Machwaya"}]
+keywords = ["middleware", "audit", "qpu", "qiskit", "qrtm", "qtet", "wilson"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+hf = ["transformers>=4.49,<5", "accelerate>=1.2", "huggingface_hub>=0.28", "torch"]
+qpu = ["qiskit>=2.5.2,<3", "qiskit-ibm-runtime>=0.49,<0.50"]
+review = ["gradio>=5,<7", "matplotlib>=3.8", "pandas>=2"]
+all = [
+  "transformers>=4.49,<5", "accelerate>=1.2", "huggingface_hub>=0.28", "torch",
+  "qiskit>=2.5.2,<3", "qiskit-ibm-runtime>=0.49,<0.50",
+  "gradio>=5,<7", "matplotlib>=3.8", "pandas>=2"
+]
+
+[project.scripts]
+wilson-demo = "wilson_middleware.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["wilson_middleware*"]
+
+[tool.setuptools.package-data]
+wilson_middleware = ["policy/*.json"]
