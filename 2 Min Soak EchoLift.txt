@@ -131,3 +131,22 @@ void loop() {
     }
   }
 }
+
+
+EchoLift 2-Minute Soak — Public Inspection Sample
+
+Destiny Machwaya
+Lei A While Research Center, Wahiawā, Hawaiʻi
+
+Copyright © 2015–2026 Destiny Machwaya.
+This release is a sample soak sketch for inspection and rerun of Tensor P2 step order and EchoLift radiation-hardening / Z-conditioning code.
+
+It is not the published hardware campaign:
+Machwaya, D. (2026). Hardware demonstration of a fixed Tensor P2 kernel: zero-entropy leakage and stable coherence across dual microcontroller platforms. Frontiers in Physics. https://doi.org/10.3389/fphy.2026.1758206
+
+Do not cite this sketch as that result. Do not treat the serial completion line as the paper’s 32-bit leakage measurement, dual-platform replication (RP2040 QCC Echo-Origin / ESP32-S3 EchoLift Harmony), session hashes, or independent observation.
+
+This file is: an openly reproducible interrogation sample; a readable P2 walk (3,3 → 0 → 0,1 → 1,2 → 2,1 → 1,0 → Delay); Gaussian Z / SEU / Z-banking / virtual $R_z$; a 2-minute wall-clock loop.
+
+This file is not: the Frontiers run; the sealed kernel from that study; a 0.00% device-resolution leakage claim; a stand-in for the 30- or 60-minute soaks.
+The article is the citable hardware demonstration. This release is the public inspection surface.
