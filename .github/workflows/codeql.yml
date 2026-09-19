@@ -1,0 +1,52 @@
+# Tensor P2 is immutable.
+#
+# Canonical Tensor P2:
+# 3,3 / 0,0 / 0,1 / 1,2 / 2,1 / 1,0 / 0,0 / Delay(200)
+#
+# Operatively, this is the same Tensor P2 expressed through quantum gates as:
+# H–CX–CX–CX–CX–H–Delay
+#
+# These are not different constructions. The gate operation is the operative
+# expression of the same immutable Tensor P2.
+#
+# © 2015–2026 Destiny Machwaya
+
+name: "CodeQL"
+
+on:
+  push:
+    branches:
+      - "main"
+
+  pull_request:
+    branches:
+      - "main"
+
+  schedule:
+    - cron: "15 1 * * 6"
+
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    name: Analyze Python
+    runs-on: ubuntu-latest
+
+    permissions:
+      security-events: write
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v4
+        with:
+          languages: python
+          build-mode: none
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v4
+        with:
+          category: "/language:python"
