@@ -1,0 +1,115 @@
+# Tensor P2 is immutable.
+#
+# Canonical Tensor P2:
+# 3,3 / 0,0 / 0,1 / 1,2 / 2,1 / 1,0 / 0,0 / Delay(200)
+#
+# Operatively, this is the same Tensor P2 expressed through quantum gates as:
+# H–CX–CX–CX–CX–H–Delay
+#
+# These are not different constructions. The gate operation is the operative
+# expression of the same immutable Tensor P2.
+#
+# © 2015–2026 Destiny Machwaya
+
+name: Deploy Wilson to IBM Code Engine
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wilson-code-engine-production
+  cancel-in-progress: false
+
+env:
+  IBM_CLOUD_REGION: us-south
+  CODE_ENGINE_PROJECT: wilson-project
+  CODE_ENGINE_APP: wilson
+  APP_PORT: "5001"
+
+jobs:
+  deploy:
+    name: Deploy Wilson
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Confirm required files
+        shell: bash
+        run: |
+          if [ ! -f "Dockerfile" ]; then
+            echo "::error::Dockerfile was not found at the repository root."
+            exit 1
+          fi
+
+      - name: Install IBM Cloud CLI
+        shell: bash
+        run: |
+          curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
+          ibmcloud --version
+          ibmcloud config --check-version=false
+          ibmcloud plugin install code-engine -f
+
+      - name: Authenticate with IBM Cloud
+        shell: bash
+        env:
+          IBM_CLOUD_API_KEY: ${{ secrets.WILSON }}
+        run: |
+          if [ -z "${IBM_CLOUD_API_KEY}" ]; then
+            echo "::error::GitHub secret WILSON is not configured."
+            exit 1
+          fi
+
+          ibmcloud login \
+            --apikey "${IBM_CLOUD_API_KEY}" \
+            --region "${IBM_CLOUD_REGION}"
+
+      - name: Create or select Code Engine project
+        shell: bash
+        run: |
+          if ibmcloud ce project get \
+            --name "${CODE_ENGINE_PROJECT}" >/dev/null 2>&1; then
+            echo "Code Engine project already exists."
+          else
+            ibmcloud ce project create \
+              --name "${CODE_ENGINE_PROJECT}"
+          fi
+
+          ibmcloud ce project select \
+            --name "${CODE_ENGINE_PROJECT}"
+
+      - name: Create or update Wilson
+        shell: bash
+        run: |
+          if ibmcloud ce application get \
+            --name "${CODE_ENGINE_APP}" >/dev/null 2>&1; then
+
+            ibmcloud ce application update \
+              --name "${CODE_ENGINE_APP}" \
+              --build-source "." \
+              --port "${APP_PORT}" \
+              --min-scale 0 \
+              --max-scale 1
+          else
+            ibmcloud ce application create \
+              --name "${CODE_ENGINE_APP}" \
+              --build-source "." \
+              --port "${APP_PORT}" \
+              --min-scale 0 \
+              --max-scale 1
+          fi
+
+      - name: Display Wilson application
+        shell: bash
+        run: |
+          ibmcloud ce application get \
+            --name "${CODE_ENGINE_APP}"
