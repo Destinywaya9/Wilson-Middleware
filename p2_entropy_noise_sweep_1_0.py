@@ -167,7 +167,7 @@ for channel_name, channel_fn in NOISE_CHANNELS.items():
 
         if step == len(P2_WINDOW) - 1 and label == "0,0":
             rho = pure_density("0,0")
-            event = "final 0,0 forced reset"
+            event = "final 0,0 forced closure"
 
         metrics = report_density(rho)
         row = {
