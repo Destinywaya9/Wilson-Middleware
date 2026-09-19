@@ -24,7 +24,7 @@ Window used by both scripts:
 
 `0,0 → 0,1 → 1,2 → 2,1 → 1,0 → 0,0`
 
-Noise is applied only at `1,0`. Final `0,0` is the closure/reset readout.
+Noise is applied only at `1,0`. Final `0,0` is the closure/final readout.
 
 ## Run
 
