@@ -5,12 +5,13 @@
 struct Step { const char* name; int qA; int qB; int delay_ms; };
 Step KERNEL[] = {
   {"3,3",   0,0,  0},
-  {"0",     0,0,  0},
+  {"0,0",     0,0,  0},
   {"0,1",   0,1,  0},
   {"1,2",   1,2,  0},
   {"2,1",   2,1,  0},
   {"1,0",   1,0,  0},
-  {"Delay", 0,0, 200}
+  {"0,0",   0,0   0},
+  {"Delay", 200}
 };
 const int KERNEL_LEN = sizeof(KERNEL)/sizeof(KERNEL[0]);
 
