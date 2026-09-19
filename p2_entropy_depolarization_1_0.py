@@ -76,7 +76,7 @@ for step, label in enumerate(P2_WINDOW):
 
     if step == len(P2_WINDOW) - 1 and label == "0,0":
         rho = pure_density("0,0")
-        event = "final 0,0 forced reset"
+        event = "final 0,0 forced closure"
 
     eigvals = np.linalg.eigvalsh((rho + rho.conj().T) / 2)
     eigvals = np.clip(eigvals.real, 0.0, None)
