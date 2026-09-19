@@ -16,9 +16,39 @@ Do not cite this sketch as that result. Do not treat its serial completion line 
 ## What this file is
 
 - An openly reproducible interrogation sample
-- A readable Tensor P2 walk: `3,3 → 0 → 0,1 → 1,2 → 2,1 → 1,0 → Delay`
+- A readable Tensor P2 walk: `3,3 → 0 → 0,1 → 1,2 → 2,1 → 1,0 → 0,0 Delay` 
 - EchoLift-style radiation conditioning: Gaussian Z error, periodic SEU kick, Z-banking, virtual \(R_z\)
 - A 2-minute wall-clock soak loop
+
+ /*
+TENSOR P2 — MATHEMATICAL AND OPERATIONAL NOTE
+
+Tensor P2 is one immutable law: the Quantum Kernel and the generative
+topological Tensor derived and made operable by Destiny Machwaya at the base
+mathematical foundations. Its canonical invariant traversal is:
+
+3,3 / 0,0 / 0,1 / 1,2 / 2,1 / 1,0 / 0,0 / Delay(200)
+
+In quantum-gate operation, Tensor P2 operates as:
+
+H–CX–CX–CX–CX–H–Delay
+
+The gate operation, kernel execution, and generative topological Tensor are
+not separate forms or different constructions. They are operable expressions
+of the same invariant Tensor P2 law.
+
+Source-code names, phase helpers, conditioning labels, state labels,
+configuration fields, hardware timing calls, and surrounding explanatory
+language are descriptive implementation and readout language only. They do
+not define, divide, modify, adapt, replace, or supersede Tensor P2.
+
+The Tensor/Quantum Kernel and its operation remain fixed and immutable across
+software, hardware, quantum-gate, and topological demonstrations.
+
+Authored and owned by Destiny Machwaya.
+© 2015–2026 Destiny Machwaya.
+Published through Lei A While Research Center where applicable.
+*/
 
 ## What this file is not
 
@@ -36,3 +66,4 @@ Machwaya, D. (2026). Hardware demonstration of a fixed Tensor P2 kernel: zero-en
 ## Suggested citation of this sample
 
 Machwaya, D. (2026). EchoLift 2-minute soak — public inspection sample (Tensor P2 walk and radiation-hardening code). GitHub release. Inspection sample only; not the published hardware campaign.
+ 
