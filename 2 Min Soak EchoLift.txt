@@ -9,7 +9,7 @@ Step KERNEL[] = {
   {"1,2",   1,2,  0},
   {"2,1",   2,1,  0},
   {"1,0",   1,0,  0},
-  {"0,0",   0,0   0},
+  {"0,0",   0,0,   0},
   {"Delay", 200}
 };
 const int KERNEL_LEN = sizeof(KERNEL)/sizeof(KERNEL[0]);
