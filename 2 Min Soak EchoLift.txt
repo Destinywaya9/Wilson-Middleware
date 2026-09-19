@@ -1,6 +1,5 @@
 #include <Arduino.h>
 #include <math.h>
-
 // ---------- Kernel (Canonical Tensor P2) ----------
 struct Step { const char* name; int qA; int qB; int delay_ms; };
 Step KERNEL[] = {
@@ -14,19 +13,16 @@ Step KERNEL[] = {
   {"Delay", 200}
 };
 const int KERNEL_LEN = sizeof(KERNEL)/sizeof(KERNEL[0]);
-
 // ---------- Config: EchoLift conditioning ----------
 static const float NOISE_STD_RAD   = 0.020f;   // ~1.15° rms phase error
 static const bool  APPLY_GAUSS_Z   = true;
 static const bool  APPLY_SEU_Z     = true;
 static const int   SEU_EVERY       = 25;       // single event upset every 25 frames
 static const int   TIMING_JITTER   = 0;        // +/- ms drift on Delay steps
-
 // Z-banking (curbing) params
 static const float Z_SOFT_RAD      = 0.050f;
 static const float Z_DAMP_F        = 0.85f;
 static const float Z_CAP_RAD       = 0.60f;
-
 // ---------- PRNG ----------
 static uint32_t rng_state = 0x12345678u;
 static inline float urand() {
@@ -39,14 +35,12 @@ static inline float randn(float std_rad) {
   float z  = sqrtf(-2.0f*logf(u1)) * cosf(2.0f*3.14159265358979f*u2);
   return z * std_rad;
 }
-
 // ---------- Phase helpers ----------
 static inline float wrap_pi(float a) {
   while (a <= -3.14159265358979f) a += 6.28318530717959f;
   while (a >   3.14159265358979f) a -= 6.28318530717959f;
   return a;
 }
-
 static void inject_z_error(float theta[3], uint32_t frame) {
   if (APPLY_GAUSS_Z) {
     for (int q=0; q<3; ++q) theta[q] = wrap_pi(theta[q] + randn(NOISE_STD_RAD));
@@ -57,7 +51,6 @@ static void inject_z_error(float theta[3], uint32_t frame) {
     theta[q] = wrap_pi(theta[q] + kick);
   }
 }
-
 static void z_banking(float theta[3]) {
   for (int q=0; q<3; ++q) {
     float t = theta[q];
@@ -67,14 +60,12 @@ static void z_banking(float theta[3]) {
     theta[q] = t * Z_DAMP_F;
   }
 }
-
 static void virtual_rz_correct(float theta[3], float applied[3]) {
   for (int q=0; q<3; ++q) {
     applied[q] = -theta[q];
     theta[q]   = 0.0f;
   }
 }
-
 static inline int with_jitter(int base) {
   if (base <= 0) base = 200;
   if (TIMING_JITTER <= 0) return base;
@@ -82,15 +73,12 @@ static inline int with_jitter(int base) {
   int v = base + j;
   return v < 0 ? 0 : v;
 }
-
 // ---------- Globals ----------
 float z_phase[3] = {0.f, 0.f, 0.f};
 static uint64_t seq = 0;
 static uint32_t frame = 1;
-
 bool coherence_locked = true;
 bool entropy_ok = true;
-
 // Run one kernel + conditioning cycle
 static void run_kernel_and_condition(uint32_t frame, uint64_t &seq) {
   for (int i=0; i<KERNEL_LEN; ++i) {
@@ -99,26 +87,20 @@ static void run_kernel_and_condition(uint32_t frame, uint64_t &seq) {
     delay(d);
     ++seq;
   }
-
   inject_z_error(z_phase, frame);
   z_banking(z_phase);
-
   float applied_vrz[3];
   virtual_rz_correct(z_phase, applied_vrz);
-
   // In a real test you could add checks here to update coherence_locked / entropy_ok
 }
-
 void setup() {
   Serial.begin(115200);
   delay(800);
   Serial.println("=== EchoLift 2-Minute Soak Test ===");
 }
-
 void loop() {
   static bool testDone = false;
   static unsigned long startMs = millis();
-
   if (!testDone) {
     if (millis() - startMs < 120000) {  // 2 minutes
       run_kernel_and_condition(frame, seq);
@@ -132,22 +114,14 @@ void loop() {
     }
   }
 }
-
-
 EchoLift 2-Minute Soak — Public Inspection Sample
-
 Destiny Machwaya
 Lei A While Research Center, Wahiawā, Hawaiʻi
-
 Copyright © 2015–2026 Destiny Machwaya.
 This release is a sample soak sketch for inspection and rerun of Tensor P2 step order and EchoLift radiation-hardening / Z-conditioning code.
-
 It is not the published hardware campaign:
 Machwaya, D. (2026). Hardware demonstration of a fixed Tensor P2 kernel: zero-entropy leakage and stable coherence across dual microcontroller platforms. Frontiers in Physics. https://doi.org/10.3389/fphy.2026.1758206
-
 Do not cite this sketch as that result. Do not treat the serial completion line as the paper’s 32-bit leakage measurement, dual-platform replication (RP2040 QCC Echo-Origin / ESP32-S3 EchoLift Harmony), session hashes, or independent observation.
-
-This file is: an openly reproducible interrogation sample; a readable P2 walk (3,3 → 0 → 0,1 → 1,2 → 2,1 → 1,0 → Delay); Gaussian Z / SEU / Z-banking / virtual $R_z$; a 2-minute wall-clock loop.
-
+This file is: an openly reproducible interrogation sample; a readable P2 walk (3,3 → 0,0 → 0,1 → 1,2 → 2,1 → 1,0 → 0,0 → Delay); Gaussian Z / SEU / Z-banking / virtual $R_z$; a 2-minute wall-clock loop.
 This file is not: the Frontiers run; the sealed kernel from that study; a 0.00% device-resolution leakage claim; a stand-in for the 30- or 60-minute soaks.
 The article is the citable hardware demonstration. This release is the public inspection surface.
