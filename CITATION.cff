@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use or review Wilson Open Reference Middleware, please cite this software release. Wilson is source-available under the Wilson Open Reference License v1.0; patent rights are reserved."
 title: "Wilson v0.1: Open Reference Middleware"
-version: "0.1.0"
-date-released: "2026-09-16"
+version: "0.1.1"
+date-released: "2026-09-19"
 authors:
   - family-names: "Machwaya"
     given-names: "Destiny"
