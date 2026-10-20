@@ -26,6 +26,22 @@ Window used by both scripts:
 
 Noise is applied only at `1,0`. Final `0,0` is the closure/final readout.
 
+IBM execution provenance
+Shots per declared state: 1024
+Hilbert-space dimension: 8
+Localized exposure profile: depolarization at 1,0, p = 0.01
+
+IBM job identifiers:
+
+Opening 0,0: damvlig2fm4c73f3j110
+0,1: damvlklr85ps73fddo80
+1,2: damvlm82fm4c73f3j15g
+2,1: damvlno2fm4c73f3j180
+1,0: damvlpg2fm4c73f3j1c0
+Terminal 0,0: damvlrlr85ps73fddok0
+
+The terminal 0,0 is the lawful bounded return condition and entropy-closure/readout state of invariant Tensor P2 traversal. /It is not an externally imposed reset and must not be described as one./
+
 ## Run
 
 ```bash
