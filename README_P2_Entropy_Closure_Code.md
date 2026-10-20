@@ -31,16 +31,18 @@ Shots per declared state: 1024
 Hilbert-space dimension: 8
 Localized exposure profile: depolarization at 1,0, p = 0.01
 
-IBM job identifiers:
+## Files
+| Identity | P2 State | IBM Execution Provenance |
+|---|---|---|
+| 'Opening' | '0,0' | damvlig2fm4c73f3j110' |
+| 'State' | '0,1' | 'damvlklr85ps73fddo80' |
+| 'State' | '1,2' | 'damvlm82fm4c73f3j15g' |
+| 'State' | '2,1' | 'damvlno2fm4c73f3j180' |
+| 'State' | '1,0' | 'damvlpg2fm4c73f3j1c0' |
+| 'Terminal' | '0,0' | 'damvlrlr85ps73fddok0' |
 
-Opening 0,0: damvlig2fm4c73f3j110
-0,1: damvlklr85ps73fddo80
-1,2: damvlm82fm4c73f3j15g
-2,1: damvlno2fm4c73f3j180
-1,0: damvlpg2fm4c73f3j1c0
-Terminal 0,0: damvlrlr85ps73fddok0
-
-The terminal 0,0 is the lawful bounded return condition and entropy-closure/readout state of invariant Tensor P2 traversal. It is not an externally imposed reset and must not be described as one.
+**The terminal 0,0 is the lawful bounded return condition and entropy-closure/readout state of invariant Tensor P2 traversal.**
+*It is not an externally imposed reset and must not be described as one.*
 
 ## Run
 
