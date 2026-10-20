@@ -40,7 +40,7 @@ Opening 0,0: damvlig2fm4c73f3j110
 1,0: damvlpg2fm4c73f3j1c0
 Terminal 0,0: damvlrlr85ps73fddok0
 
-The terminal 0,0 is the lawful bounded return condition and entropy-closure/readout state of invariant Tensor P2 traversal. /It is not an externally imposed reset and must not be described as one./
+The terminal 0,0 is the lawful bounded return condition and entropy-closure/readout state of invariant Tensor P2 traversal. It is not an externally imposed reset and must not be described as one.
 
 ## Run
 
