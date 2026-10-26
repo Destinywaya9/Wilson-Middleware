@@ -1,0 +1,4243 @@
+{
+  "research_author_originator_and_sole_rights_holder": "Destiny Machwaya",
+  "copyright": "Copyright (c) 2015-2026 Destiny Machwaya. All rights reserved.",
+  "record_kind": "Executed full source Hilbert-state, density, entanglement, and entropy traversal",
+  "canonical_P2": "3,3 / 0,0 / 0,1 / 1,2 / 2,1 / 1,0 / 0,0 / Delay(200)",
+  "qubit_order": [
+    "q0",
+    "q1",
+    "q2"
+  ],
+  "author_gate_sequence_q0_q1_q2": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      2,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "hilbert_space_interval": "opening 0,0 through final 0,0, including both boundaries",
+  "folded_zero": {
+    "canonical_forms": [
+      "0 = folded infinity = folded total-state simultaneity",
+      "0_N = 0 + \\sum_{n=1}^{N}(n + (-n)) = 0",
+      "0_Q = \\lim_{N\\to\\infty}[0 + \\sum_{n=1}^{N}(n + (-n))]",
+      "0_Q != empty set; 0_Q != absence",
+      "0_Q = {..., -3, -2, -1, 0, 1, 2, 3, ...}^{parallel}",
+      "parallel = simultaneous lawful coexistence, not sequence or ordinary addition",
+      "pi_n(0_Q) = n; rho(n) = 0_Q; rho(pi_n(0_Q)) = 0_Q"
+    ],
+    "shared_reference_identity": "M_E == 0_Q; 0 == M_E",
+    "architectural_dimension": 4,
+    "directional_indexing": "T_i = I_res(0,D_i), i=1,...,12",
+    "initial_reference": "0_Q",
+    "terminal_reference": "0_Q",
+    "provenance": "The author definition is unchanged; assistant representations were repaired."
+  },
+  "canonical_P3": "P3 = [P2_1 tensor D_1, P2_2 tensor D_2, P2_3 tensor D_3]",
+  "traversal_trace": [
+    {
+      "position": 1,
+      "p2_reference": "3,3",
+      "gate_q0_q1_q2": null,
+      "stage": "bounded triadic entry"
+    },
+    {
+      "position": 2,
+      "p2_reference": "0,0",
+      "gate_q0_q1_q2": [
+        0,
+        0,
+        0
+      ],
+      "stage": "folded total-state reference after entry",
+      "source_H_CX_operation": "H(0)",
+      "operator_before": {
+        "integer_numerator": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "denominator": "sqrt(2)**0",
+        "denominator_power": 0,
+        "basis_order": [
+          "q0",
+          "q1",
+          "q2"
+        ]
+      },
+      "operator_after": {
+        "integer_numerator": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1
+          ]
+        ],
+        "denominator": "sqrt(2)**1",
+        "denominator_power": 1,
+        "basis_order": [
+          "q0",
+          "q1",
+          "q2"
+        ]
+      },
+      "quantum_before": {
+        "amplitudes_exact": {
+          "integer_numerators": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "denominator": "sqrt(2)**0",
+          "denominator_power": 0,
+          "basis_order": [
+            "q0",
+            "q1",
+            "q2"
+          ],
+          "basis_labels_q0_q1_q2": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110",
+            "111"
+          ]
+        },
+        "global_density_matrix_exact": {
+          "integer_numerator": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "integer_denominator": 1
+        },
+        "trace": 1.0,
+        "global_purity": 1.0,
+        "global_density_eigenvalues": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "global_von_neumann_entropy_bits": 0.0,
+        "reduced_entropy_q0_q1_q2_bits": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reduced_states": {
+          "q0": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 1
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          },
+          "q1": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 1
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          },
+          "q2": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 1
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          }
+        },
+        "exact_normalization_verified": true,
+        "exact_pure_density_projector_verified": true,
+        "genuine_tripartite_entanglement": false
+      },
+      "quantum_after": {
+        "amplitudes_exact": {
+          "integer_numerators": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "denominator": "sqrt(2)**1",
+          "denominator_power": 1,
+          "basis_order": [
+            "q0",
+            "q1",
+            "q2"
+          ],
+          "basis_labels_q0_q1_q2": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110",
+            "111"
+          ]
+        },
+        "global_density_matrix_exact": {
+          "integer_numerator": [
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "integer_denominator": 2
+        },
+        "trace": 1.0,
+        "global_purity": 1.0,
+        "global_density_eigenvalues": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "global_von_neumann_entropy_bits": 0.0,
+        "reduced_entropy_q0_q1_q2_bits": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reduced_states": {
+          "q0": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          },
+          "q1": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          },
+          "q2": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          }
+        },
+        "exact_normalization_verified": true,
+        "exact_pure_density_projector_verified": true,
+        "genuine_tripartite_entanglement": false
+      },
+      "exact_prefix_unitarity_verified": true,
+      "boundary": "Hilbert-space entry",
+      "folded_reference": "0_Q"
+    },
+    {
+      "position": 3,
+      "p2_reference": "0,1",
+      "gate_q0_q1_q2": [
+        0,
+        1,
+        0
+      ],
+      "stage": "differentiated traversal",
+      "source_H_CX_operation": "CX(0,1)",
+      "operator_before": {
+        "integer_numerator": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1
+          ]
+        ],
+        "denominator": "sqrt(2)**1",
+        "denominator_power": 1,
+        "basis_order": [
+          "q0",
+          "q1",
+          "q2"
+        ]
+      },
+      "operator_after": {
+        "integer_numerator": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ]
+        ],
+        "denominator": "sqrt(2)**1",
+        "denominator_power": 1,
+        "basis_order": [
+          "q0",
+          "q1",
+          "q2"
+        ]
+      },
+      "quantum_before": {
+        "amplitudes_exact": {
+          "integer_numerators": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "denominator": "sqrt(2)**1",
+          "denominator_power": 1,
+          "basis_order": [
+            "q0",
+            "q1",
+            "q2"
+          ],
+          "basis_labels_q0_q1_q2": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110",
+            "111"
+          ]
+        },
+        "global_density_matrix_exact": {
+          "integer_numerator": [
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "integer_denominator": 2
+        },
+        "trace": 1.0,
+        "global_purity": 1.0,
+        "global_density_eigenvalues": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "global_von_neumann_entropy_bits": 0.0,
+        "reduced_entropy_q0_q1_q2_bits": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reduced_states": {
+          "q0": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          },
+          "q1": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          },
+          "q2": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          }
+        },
+        "exact_normalization_verified": true,
+        "exact_pure_density_projector_verified": true,
+        "genuine_tripartite_entanglement": false
+      },
+      "quantum_after": {
+        "amplitudes_exact": {
+          "integer_numerators": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "denominator": "sqrt(2)**1",
+          "denominator_power": 1,
+          "basis_order": [
+            "q0",
+            "q1",
+            "q2"
+          ],
+          "basis_labels_q0_q1_q2": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110",
+            "111"
+          ]
+        },
+        "global_density_matrix_exact": {
+          "integer_numerator": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "integer_denominator": 2
+        },
+        "trace": 1.0,
+        "global_purity": 1.0,
+        "global_density_eigenvalues": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "global_von_neumann_entropy_bits": 0.0,
+        "reduced_entropy_q0_q1_q2_bits": [
+          1.0,
+          1.0,
+          0.0
+        ],
+        "reduced_states": {
+          "q0": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.5,
+              0.5
+            ],
+            "von_neumann_entropy_bits": 1.0,
+            "density_rank": 2
+          },
+          "q1": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.5,
+              0.5
+            ],
+            "von_neumann_entropy_bits": 1.0,
+            "density_rank": 2
+          },
+          "q2": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          }
+        },
+        "exact_normalization_verified": true,
+        "exact_pure_density_projector_verified": true,
+        "genuine_tripartite_entanglement": false
+      },
+      "exact_prefix_unitarity_verified": true
+    },
+    {
+      "position": 4,
+      "p2_reference": "1,2",
+      "gate_q0_q1_q2": [
+        1,
+        2,
+        0
+      ],
+      "stage": "relational transition",
+      "source_H_CX_operation": "CX(1,2)",
+      "operator_before": {
+        "integer_numerator": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ]
+        ],
+        "denominator": "sqrt(2)**1",
+        "denominator_power": 1,
+        "basis_order": [
+          "q0",
+          "q1",
+          "q2"
+        ]
+      },
+      "operator_after": {
+        "integer_numerator": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "denominator": "sqrt(2)**1",
+        "denominator_power": 1,
+        "basis_order": [
+          "q0",
+          "q1",
+          "q2"
+        ]
+      },
+      "quantum_before": {
+        "amplitudes_exact": {
+          "integer_numerators": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "denominator": "sqrt(2)**1",
+          "denominator_power": 1,
+          "basis_order": [
+            "q0",
+            "q1",
+            "q2"
+          ],
+          "basis_labels_q0_q1_q2": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110",
+            "111"
+          ]
+        },
+        "global_density_matrix_exact": {
+          "integer_numerator": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "integer_denominator": 2
+        },
+        "trace": 1.0,
+        "global_purity": 1.0,
+        "global_density_eigenvalues": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "global_von_neumann_entropy_bits": 0.0,
+        "reduced_entropy_q0_q1_q2_bits": [
+          1.0,
+          1.0,
+          0.0
+        ],
+        "reduced_states": {
+          "q0": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.5,
+              0.5
+            ],
+            "von_neumann_entropy_bits": 1.0,
+            "density_rank": 2
+          },
+          "q1": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.5,
+              0.5
+            ],
+            "von_neumann_entropy_bits": 1.0,
+            "density_rank": 2
+          },
+          "q2": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          }
+        },
+        "exact_normalization_verified": true,
+        "exact_pure_density_projector_verified": true,
+        "genuine_tripartite_entanglement": false
+      },
+      "quantum_after": {
+        "amplitudes_exact": {
+          "integer_numerators": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "denominator": "sqrt(2)**1",
+          "denominator_power": 1,
+          "basis_order": [
+            "q0",
+            "q1",
+            "q2"
+          ],
+          "basis_labels_q0_q1_q2": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110",
+            "111"
+          ]
+        },
+        "global_density_matrix_exact": {
+          "integer_numerator": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "integer_denominator": 2
+        },
+        "trace": 1.0,
+        "global_purity": 1.0,
+        "global_density_eigenvalues": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "global_von_neumann_entropy_bits": 0.0,
+        "reduced_entropy_q0_q1_q2_bits": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "reduced_states": {
+          "q0": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.5,
+              0.5
+            ],
+            "von_neumann_entropy_bits": 1.0,
+            "density_rank": 2
+          },
+          "q1": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.5,
+              0.5
+            ],
+            "von_neumann_entropy_bits": 1.0,
+            "density_rank": 2
+          },
+          "q2": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.5,
+              0.5
+            ],
+            "von_neumann_entropy_bits": 1.0,
+            "density_rank": 2
+          }
+        },
+        "exact_normalization_verified": true,
+        "exact_pure_density_projector_verified": true,
+        "genuine_tripartite_entanglement": true
+      },
+      "exact_prefix_unitarity_verified": true
+    },
+    {
+      "position": 5,
+      "p2_reference": "2,1",
+      "gate_q0_q1_q2": [
+        2,
+        1,
+        0
+      ],
+      "stage": "inversion-paired transition",
+      "source_H_CX_operation": "CX(1,2)",
+      "operator_before": {
+        "integer_numerator": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "denominator": "sqrt(2)**1",
+        "denominator_power": 1,
+        "basis_order": [
+          "q0",
+          "q1",
+          "q2"
+        ]
+      },
+      "operator_after": {
+        "integer_numerator": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ]
+        ],
+        "denominator": "sqrt(2)**1",
+        "denominator_power": 1,
+        "basis_order": [
+          "q0",
+          "q1",
+          "q2"
+        ]
+      },
+      "quantum_before": {
+        "amplitudes_exact": {
+          "integer_numerators": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "denominator": "sqrt(2)**1",
+          "denominator_power": 1,
+          "basis_order": [
+            "q0",
+            "q1",
+            "q2"
+          ],
+          "basis_labels_q0_q1_q2": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110",
+            "111"
+          ]
+        },
+        "global_density_matrix_exact": {
+          "integer_numerator": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "integer_denominator": 2
+        },
+        "trace": 1.0,
+        "global_purity": 1.0,
+        "global_density_eigenvalues": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "global_von_neumann_entropy_bits": 0.0,
+        "reduced_entropy_q0_q1_q2_bits": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "reduced_states": {
+          "q0": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.5,
+              0.5
+            ],
+            "von_neumann_entropy_bits": 1.0,
+            "density_rank": 2
+          },
+          "q1": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.5,
+              0.5
+            ],
+            "von_neumann_entropy_bits": 1.0,
+            "density_rank": 2
+          },
+          "q2": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.5,
+              0.5
+            ],
+            "von_neumann_entropy_bits": 1.0,
+            "density_rank": 2
+          }
+        },
+        "exact_normalization_verified": true,
+        "exact_pure_density_projector_verified": true,
+        "genuine_tripartite_entanglement": true
+      },
+      "quantum_after": {
+        "amplitudes_exact": {
+          "integer_numerators": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "denominator": "sqrt(2)**1",
+          "denominator_power": 1,
+          "basis_order": [
+            "q0",
+            "q1",
+            "q2"
+          ],
+          "basis_labels_q0_q1_q2": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110",
+            "111"
+          ]
+        },
+        "global_density_matrix_exact": {
+          "integer_numerator": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "integer_denominator": 2
+        },
+        "trace": 1.0,
+        "global_purity": 1.0,
+        "global_density_eigenvalues": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "global_von_neumann_entropy_bits": 0.0,
+        "reduced_entropy_q0_q1_q2_bits": [
+          1.0,
+          1.0,
+          0.0
+        ],
+        "reduced_states": {
+          "q0": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.5,
+              0.5
+            ],
+            "von_neumann_entropy_bits": 1.0,
+            "density_rank": 2
+          },
+          "q1": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.5,
+              0.5
+            ],
+            "von_neumann_entropy_bits": 1.0,
+            "density_rank": 2
+          },
+          "q2": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          }
+        },
+        "exact_normalization_verified": true,
+        "exact_pure_density_projector_verified": true,
+        "genuine_tripartite_entanglement": false
+      },
+      "exact_prefix_unitarity_verified": true
+    },
+    {
+      "position": 6,
+      "p2_reference": "1,0",
+      "gate_q0_q1_q2": [
+        1,
+        0,
+        0
+      ],
+      "stage": "return-directed traversal",
+      "source_H_CX_operation": "CX(0,1)",
+      "operator_before": {
+        "integer_numerator": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ]
+        ],
+        "denominator": "sqrt(2)**1",
+        "denominator_power": 1,
+        "basis_order": [
+          "q0",
+          "q1",
+          "q2"
+        ]
+      },
+      "operator_after": {
+        "integer_numerator": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1
+          ]
+        ],
+        "denominator": "sqrt(2)**1",
+        "denominator_power": 1,
+        "basis_order": [
+          "q0",
+          "q1",
+          "q2"
+        ]
+      },
+      "quantum_before": {
+        "amplitudes_exact": {
+          "integer_numerators": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "denominator": "sqrt(2)**1",
+          "denominator_power": 1,
+          "basis_order": [
+            "q0",
+            "q1",
+            "q2"
+          ],
+          "basis_labels_q0_q1_q2": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110",
+            "111"
+          ]
+        },
+        "global_density_matrix_exact": {
+          "integer_numerator": [
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "integer_denominator": 2
+        },
+        "trace": 1.0,
+        "global_purity": 1.0,
+        "global_density_eigenvalues": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "global_von_neumann_entropy_bits": 0.0,
+        "reduced_entropy_q0_q1_q2_bits": [
+          1.0,
+          1.0,
+          0.0
+        ],
+        "reduced_states": {
+          "q0": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.5,
+              0.5
+            ],
+            "von_neumann_entropy_bits": 1.0,
+            "density_rank": 2
+          },
+          "q1": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.5,
+              0.5
+            ],
+            "von_neumann_entropy_bits": 1.0,
+            "density_rank": 2
+          },
+          "q2": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          }
+        },
+        "exact_normalization_verified": true,
+        "exact_pure_density_projector_verified": true,
+        "genuine_tripartite_entanglement": false
+      },
+      "quantum_after": {
+        "amplitudes_exact": {
+          "integer_numerators": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "denominator": "sqrt(2)**1",
+          "denominator_power": 1,
+          "basis_order": [
+            "q0",
+            "q1",
+            "q2"
+          ],
+          "basis_labels_q0_q1_q2": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110",
+            "111"
+          ]
+        },
+        "global_density_matrix_exact": {
+          "integer_numerator": [
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "integer_denominator": 2
+        },
+        "trace": 1.0,
+        "global_purity": 1.0,
+        "global_density_eigenvalues": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "global_von_neumann_entropy_bits": 0.0,
+        "reduced_entropy_q0_q1_q2_bits": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reduced_states": {
+          "q0": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          },
+          "q1": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          },
+          "q2": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          }
+        },
+        "exact_normalization_verified": true,
+        "exact_pure_density_projector_verified": true,
+        "genuine_tripartite_entanglement": false
+      },
+      "exact_prefix_unitarity_verified": true
+    },
+    {
+      "position": 7,
+      "p2_reference": "0,0",
+      "gate_q0_q1_q2": [
+        0,
+        0,
+        0
+      ],
+      "stage": "return to folded total-state reference",
+      "source_H_CX_operation": "H(0)",
+      "operator_before": {
+        "integer_numerator": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1
+          ]
+        ],
+        "denominator": "sqrt(2)**1",
+        "denominator_power": 1,
+        "basis_order": [
+          "q0",
+          "q1",
+          "q2"
+        ]
+      },
+      "operator_after": {
+        "integer_numerator": [
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "denominator": "sqrt(2)**2",
+        "denominator_power": 2,
+        "basis_order": [
+          "q0",
+          "q1",
+          "q2"
+        ]
+      },
+      "quantum_before": {
+        "amplitudes_exact": {
+          "integer_numerators": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "denominator": "sqrt(2)**1",
+          "denominator_power": 1,
+          "basis_order": [
+            "q0",
+            "q1",
+            "q2"
+          ],
+          "basis_labels_q0_q1_q2": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110",
+            "111"
+          ]
+        },
+        "global_density_matrix_exact": {
+          "integer_numerator": [
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "integer_denominator": 2
+        },
+        "trace": 1.0,
+        "global_purity": 1.0,
+        "global_density_eigenvalues": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "global_von_neumann_entropy_bits": 0.0,
+        "reduced_entropy_q0_q1_q2_bits": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reduced_states": {
+          "q0": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          },
+          "q1": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          },
+          "q2": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 2
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          }
+        },
+        "exact_normalization_verified": true,
+        "exact_pure_density_projector_verified": true,
+        "genuine_tripartite_entanglement": false
+      },
+      "quantum_after": {
+        "amplitudes_exact": {
+          "integer_numerators": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "denominator": "sqrt(2)**2",
+          "denominator_power": 2,
+          "basis_order": [
+            "q0",
+            "q1",
+            "q2"
+          ],
+          "basis_labels_q0_q1_q2": [
+            "000",
+            "001",
+            "010",
+            "011",
+            "100",
+            "101",
+            "110",
+            "111"
+          ]
+        },
+        "global_density_matrix_exact": {
+          "integer_numerator": [
+            [
+              4,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "integer_denominator": 4
+        },
+        "trace": 1.0,
+        "global_purity": 1.0,
+        "global_density_eigenvalues": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "global_von_neumann_entropy_bits": 0.0,
+        "reduced_entropy_q0_q1_q2_bits": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reduced_states": {
+          "q0": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  4,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 4
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          },
+          "q1": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  4,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 4
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          },
+          "q2": {
+            "density_matrix_exact": {
+              "integer_numerator": [
+                [
+                  4,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "integer_denominator": 4
+            },
+            "density_eigenvalues": [
+              0.0,
+              1.0
+            ],
+            "von_neumann_entropy_bits": 0.0,
+            "density_rank": 1
+          }
+        },
+        "exact_normalization_verified": true,
+        "exact_pure_density_projector_verified": true,
+        "genuine_tripartite_entanglement": false
+      },
+      "exact_prefix_unitarity_verified": true,
+      "boundary": "Hilbert-space exit / full closure",
+      "folded_reference": "0_Q"
+    },
+    {
+      "position": 8,
+      "p2_reference": "Delay(200)",
+      "gate_q0_q1_q2": null,
+      "stage": "mandatory post-closure Delay(200)",
+      "delay": 200
+    }
+  ],
+  "source_Hilbert_entry": {
+    "source": "The |000> finite Hilbert input in the originally supplied companion",
+    "basis_order": [
+      "q0",
+      "q1",
+      "q2"
+    ],
+    "snapshot": {
+      "amplitudes_exact": {
+        "integer_numerators": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "denominator": "sqrt(2)**0",
+        "denominator_power": 0,
+        "basis_order": [
+          "q0",
+          "q1",
+          "q2"
+        ],
+        "basis_labels_q0_q1_q2": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110",
+          "111"
+        ]
+      },
+      "global_density_matrix_exact": {
+        "integer_numerator": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "integer_denominator": 1
+      },
+      "trace": 1.0,
+      "global_purity": 1.0,
+      "global_density_eigenvalues": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "global_von_neumann_entropy_bits": 0.0,
+      "reduced_entropy_q0_q1_q2_bits": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reduced_states": {
+        "q0": {
+          "density_matrix_exact": {
+            "integer_numerator": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "integer_denominator": 1
+          },
+          "density_eigenvalues": [
+            0.0,
+            1.0
+          ],
+          "von_neumann_entropy_bits": 0.0,
+          "density_rank": 1
+        },
+        "q1": {
+          "density_matrix_exact": {
+            "integer_numerator": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "integer_denominator": 1
+          },
+          "density_eigenvalues": [
+            0.0,
+            1.0
+          ],
+          "von_neumann_entropy_bits": 0.0,
+          "density_rank": 1
+        },
+        "q2": {
+          "density_matrix_exact": {
+            "integer_numerator": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "integer_denominator": 1
+          },
+          "density_eigenvalues": [
+            0.0,
+            1.0
+          ],
+          "von_neumann_entropy_bits": 0.0,
+          "density_rank": 1
+        }
+      },
+      "exact_normalization_verified": true,
+      "exact_pure_density_projector_verified": true,
+      "genuine_tripartite_entanglement": false
+    },
+    "relationship_to_canonical_zero": "A source finite Hilbert input; the authored folded total-state definition is unchanged."
+  },
+  "quantum_traversal": {
+    "executed_operation_count": 6,
+    "evaluated_snapshots": 7,
+    "metrics_computed_this_run": true,
+    "source_reference": "(|000> + |111>)/sqrt(2)",
+    "source_reference_P2_position": 4,
+    "source_reference_P2_state": "1,2",
+    "terminal_snapshot": {
+      "amplitudes_exact": {
+        "integer_numerators": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "denominator": "sqrt(2)**2",
+        "denominator_power": 2,
+        "basis_order": [
+          "q0",
+          "q1",
+          "q2"
+        ],
+        "basis_labels_q0_q1_q2": [
+          "000",
+          "001",
+          "010",
+          "011",
+          "100",
+          "101",
+          "110",
+          "111"
+        ]
+      },
+      "global_density_matrix_exact": {
+        "integer_numerator": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "integer_denominator": 4
+      },
+      "trace": 1.0,
+      "global_purity": 1.0,
+      "global_density_eigenvalues": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "global_von_neumann_entropy_bits": 0.0,
+      "reduced_entropy_q0_q1_q2_bits": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reduced_states": {
+        "q0": {
+          "density_matrix_exact": {
+            "integer_numerator": [
+              [
+                4,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "integer_denominator": 4
+          },
+          "density_eigenvalues": [
+            0.0,
+            1.0
+          ],
+          "von_neumann_entropy_bits": 0.0,
+          "density_rank": 1
+        },
+        "q1": {
+          "density_matrix_exact": {
+            "integer_numerator": [
+              [
+                4,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "integer_denominator": 4
+          },
+          "density_eigenvalues": [
+            0.0,
+            1.0
+          ],
+          "von_neumann_entropy_bits": 0.0,
+          "density_rank": 1
+        },
+        "q2": {
+          "density_matrix_exact": {
+            "integer_numerator": [
+              [
+                4,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "integer_denominator": 4
+          },
+          "density_eigenvalues": [
+            0.0,
+            1.0
+          ],
+          "von_neumann_entropy_bits": 0.0,
+          "density_rank": 1
+        }
+      },
+      "exact_normalization_verified": true,
+      "exact_pure_density_projector_verified": true,
+      "genuine_tripartite_entanglement": false
+    },
+    "terminal_amplitudes_equal_source_entry_exactly": true,
+    "terminal_density_comes_from": "Sequential execution of every supplied operation",
+    "physical_QPU_run": false,
+    "noise_channel_applied": false
+  },
+  "operator_audit": {
+    "source_H_CX_sequence": [
+      "H(0)",
+      "CX(0,1)",
+      "CX(1,2)",
+      "CX(1,2)",
+      "CX(0,1)",
+      "H(0)"
+    ],
+    "input_independent": true,
+    "method": "Exact integer operator multiplication with explicit sqrt(2) factors",
+    "complete_operator": {
+      "integer_numerator": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      "denominator": "sqrt(2)**2",
+      "denominator_power": 2,
+      "basis_order": [
+        "q0",
+        "q1",
+        "q2"
+      ]
+    },
+    "full_Hilbert_space_return_verified_exactly": true,
+    "scope": "The complete originally supplied H/CX realization; no gate factors removed."
+  },
+  "preserved_source_entanglement_record": {
+    "reference": "(|000> + |111>)/sqrt(2)",
+    "global_purity": 1.0,
+    "global_von_neumann_entropy_bits": 0.0,
+    "reduced_entropy_q0_q1_q2_bits": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "recorded_property": "Genuine tripartite entanglement during traversal",
+    "provenance": "Supplied research result; also verified by the quantum evolution in this run.",
+    "verified_from_evolved_quantum_state_this_run": true
+  },
+  "post_closure": {
+    "required": true,
+    "operation": "Delay(200)",
+    "value": 200,
+    "placement": "after final 0,0,0 and before reentry",
+    "physical_delay_evolution_simulated": false
+  },
+  "sources": {
+    "monograph_DOI": "10.67272/qtet-monograph-2026",
+    "axiomatic_work": "Axiomatic Folded-State Recurrence, Triadic Closure, and Invariant Dimensional Embedding",
+    "gate_coordinates": "Author-supplied q0,q1,q2 sequence in this session",
+    "H_CX_correspondence": "Original supplied Wilson release record and source companion",
+    "original_companion_source_sha256": "b249539738dac3eef9da18778bd5fa119a96353a0e51667089d5cee634dfbd9a",
+    "original_verification_record_sha256": "3cced814df4746a331000a5bc922ccead5f57d2e396ea6524417f437a1f60215"
+  },
+  "checks": {
+    "full_P2_and_author_gate_coordinates_preserved": true,
+    "generated_trace_preserves_all_eight_positions": true,
+    "all_six_source_operations_retained_in_order": true,
+    "all_six_operator_prefixes_unitary_exactly": true,
+    "complete_opening_to_final_operator_is_identity_exactly": true,
+    "full_source_quantum_trajectory_executed": true,
+    "computed_full_and_reduced_density_at_each_boundary_and_operation": true,
+    "computed_global_purity_and_entropy_match_supplied_trajectory": true,
+    "computed_reduced_entropies_match_supplied_trajectory": true,
+    "source_tripartite_entanglement_reference_verified_from_evolution": true,
+    "terminal_source_amplitudes_return_exactly_without_reassignment": true
+  },
+  "verification_assertions_passed": true,
+  "new_QPU_execution": false,
+  "record_sha256": "8f56936b0b2fd7ca4e467fcb5c4dcb411b40de033a5d560785748153a7a1e715"
+}
